@@ -1,0 +1,147 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card{
+    color: #fff;   
+    border-radius: 20px; /* Borde redondeado */
+    padding: 20px; /* Ajusta el espaciado interno según tus necesidades */
+    /* Agrega sombra para resaltar el efecto de vidrio */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  /* Otros estilos para resaltar el texto */
+  
+    
+  }
+  .glass{
+    
+    background: rgba(255, 255, 255, 0.2); /* Color de fondo semitransparente */
+    /*filter: blur(1px); /* Aplica el desenfoque al fondo */
+    color: rgb(255, 255, 255);
+    position: relative;
+  }
+  .glass::before{
+    position: absolute;
+    inset: 0;
+    content: "";
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
+
+  .title{
+    
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    height: 4rem;
+  }
+  .card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
+    /* O */
+    box-shadow: 0 0 5px 2px #fafafa;
+  }
+  
+  .user-info {
+     
+    flex-grow: 1;
+  }
+  
+  .username {
+     
+    margin: 0;
+  }
+  
+  .timestamp {
+     
+    color: #888;
+    font-size: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-content {
+    position: relative;
+    margin-top: 16px;
+  }
+  
+  .post-text {
+     
+    margin-bottom: 12px;
+  }
+  
+  .post-image {
+     
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .card-footer {
+    position: relative;
+    margin-top: 16px;
+  }
+  
+  
+ 
+  button:hover {
+     
+    color: #333;
+  }
+
+  .imagen{
+     
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn{
+   
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    color: #888;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 8px;
+    margin-top: 5px;
+    width: auto;
+    height: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.like{
+   
+    color: brown;
+}
+.like:hover{
+  
+    color: #333;
+}

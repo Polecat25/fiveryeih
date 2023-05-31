@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+        /* Aquí el origen de la imagen */
+        background-image: url(./assets/images/noche.gif);
+      
+        /* Fijar la imagen de fondo este vertical y
+          horizontalmente y centrado */
+        background-position: center center;
+      
+        /* Esta imagen no debe de repetirse */
+        background-repeat: no-repeat;
+      
+        /* COn esta regla fijamos la imagen en la pantalla. */
+        background-attachment: fixed;
+      
+        /* La imagen ocupa el 100% y se reescala */
+        background-size: cover;
+      
+        /* Damos un color de fondo mientras la imagen está cargando  */
+        background-color: #070124;
+}

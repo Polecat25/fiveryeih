@@ -1,0 +1,16 @@
+<!-- <main class="container">
+    <section *ngFor="let data of dataPosts" class="banner">
+        <app-card [dataFromPost]="data"></app-card>
+    </section>
+</main> -->
+
+<main class="container">
+    <app-charge *ngIf="spin"></app-charge>
+    <section class="gallery">        
+        <div *ngFor="let data of dataPosts" class="item_gallery">
+            <app-card [dataFromPost]="data"></app-card>
+            
+        </div>
+    </section>
+    
+</main>

@@ -1,0 +1,45 @@
+
+<!-- <div class="container">
+    <div class="c-header">
+      <img class="profile-picture" src="https://pesnet.com/wp-content/uploads/2017/07/shh-1.png" alt="Profile Picture">
+    </div>
+    <div class="u-info">
+      <h3>Titulo</h3>
+      <p>algosd</p>
+    </div>
+</div> -->
+
+
+<div class="card glass">
+    <div class="card-header ">
+      <img class="profile-picture" src="https://pesnet.com/wp-content/uploads/2017/07/shh-1.png" alt="Profile Picture">
+      <div class="user-info">
+        <h3 class="username">{{dataFromPost.id_author}}</h3>
+        <p class="timestamp">{{dataFromPost.createdAt | date: 'medium'}}</p>
+      </div>
+    </div>
+
+    <div class="card-content">      
+      <div class="title">
+        <h3 >{{dataFromPost.title}}</h3>
+      </div>
+      <p class="post-text">{{dataFromPost.description}}</p>
+      <img class="post-image" src="{{dataFromPost.image}}" alt="Publicación">      
+    </div>
+    <div class="card-footer"> 
+        <button class="btn like">
+            <span  class="fa-solid fa-heart"> 14</span>
+             </button>      
+        <button class="btn">
+         <span class="fa-regular fa-heart"> 15</span>
+          </button>
+      <button class="btn">
+        <span class="fa-regular fa-comment"> 12</span> Comentar
+      </button>
+      <button class="btn">Compartir</button>
+      <button class="btn">
+        <span class="fa-regular fa-pen-to-square"></span> Editar
+      </button>
+    </div>
+</div>
+  
